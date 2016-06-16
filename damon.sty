@@ -1,0 +1,30 @@
+\ProvidesPackage{damon}[2016/05/10]
+\RequirePackage{color}
+\RequirePackage{soul}
+\RequirePackage[table]{xcolor}
+\RequirePackage{tabto}
+\ProcessOptions\relax
+
+%% Traditional LaTeX or TeX follows...
+% ...
+%Definitions
+\definecolor{lightblue}{RGB}{14,190,232}
+\definecolor{examples}{RGB}{222,255,28}
+
+%New environments
+\newenvironment{theorem}[1]{\begin{center}\rowcolors{0}{lightblue}{lightblue}\begin{tabular}{|p{0.9\textwidth}|}\hline\textbf{\emph{#1}}\\}{\\\hline\end{tabular}\end{center}}
+
+%New commands
+\renewcommand{\v}[2]{\textbf{#1}: #2\\}
+
+\renewcommand{\c}{\begingroup\indent\textbullet\small\indent}
+
+\newcommand{\eg}{\begingroup\color{examples}}
+
+\renewcommand{\;}{\endgroup}
+% ...
+
+\endinput
+
+
+

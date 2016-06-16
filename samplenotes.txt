@@ -1,0 +1,25 @@
+[Times new roman, 12]
+{Independence Day}
+*NPN transistors*
+	NPN sandwich
+	Used as amplifiers
+	'Common Emitter Amplifier'
+		current gain beta, voltage gain depends 
+	'Common base amplifier'
+		high voltage gain, near unity current gain (slightly less)
+	'Common collector amplifier'
+		emitter follower
+		near unity voltage gain, high current gain
+	//Ic=B*Ib
+	'Ebers moll model'
+		represents transistor as diode and current source
+Stuff 
+Stuff
+Stuff
+;Vocabword: definition
+;Vocab: definition
+"PNP transistors"
+	PNP sandwich
+	current flows in opposite direction as NPN
+	otherwise, same model
+ 
