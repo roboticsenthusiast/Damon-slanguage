@@ -8,20 +8,32 @@
 %% Traditional LaTeX or TeX follows...
 % ...
 %Definitions
-\definecolor{lightblue}{RGB}{14,190,232}
+\definecolor{lightblue}{RGB}{132,217,252}
+\definecolor{darkerblue}{RGB}{54,82,127}
 \definecolor{examples}{RGB}{222,255,28}
 
 %New environments
-\newenvironment{theorem}[1]{\begin{center}\rowcolors{0}{lightblue}{lightblue}\begin{tabular}{|p{0.9\textwidth}|}\hline\textbf{\emph{#1}}\\}{\\\hline\end{tabular}\end{center}}
+\newenvironment{theorem}[1]{\begin{center}\rowcolors{0}{lightblue}{lightblue}\begin{tabular}{p{0.9\textwidth}}\textbf{\textcolor{darkerblue}{#1}}\\}{\\\end{tabular}\end{center}}
+
+\newenvironment{c-}{\rule{0.9\textwidth}{0.4pt}\\\textit{Characteristics:}\begin{itemize}}{\end{itemize}}
 
 %New commands
 \renewcommand{\v}[2]{\textbf{#1}: #2\\}
+
 
 \renewcommand{\c}{\begingroup\indent\textbullet\small\indent}
 
 \newcommand{\eg}{\begingroup\color{examples}}
 
 \renewcommand{\;}{\endgroup}
+
+\renewcommand{\=}[1]{\section*{#1}}
+
+\newcommand{\hh}[1]{\subsection*{#1}}
+
+%\renewcommand{\h}[1]{\section{#1}}
+
+%\newcommand{\==}[1]{#1}
 % ...
 
 \endinput
