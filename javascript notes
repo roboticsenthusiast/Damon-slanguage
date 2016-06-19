@@ -1,0 +1,133 @@
+/t javascript notes
+
+=random syntax=
+
+/v "text".length : returns numeric length of "text"
+/v "text".substring(x, y) : returns a substring of "text"
+	starts at character x and goes up to but does not include character y
+	if omit y, starts at character x and goes to the end
+	/! start counting the first character at "0"
+
+/v confirm("text") : creates dialogue box that pops up saying "text"
+	prompts user for to click "Ok"
+/v prompt("text") : vs /v confirm("text"), but allows for input
+
+/v console.log("text") : writes text in the log
+	can put code instead of text /eg "2 + 5"
+	/! NOT console.print
+
+/! Must end statements with a ";"
+/! Computers are picky! Syntax must be exact (with some exceptions)
+
+==data types==
+	/v numbers
+	/v strings
+	/v booleans
+
+==mathematical operators==
+
+/v + : add OR concatenate (if string)
+/v - : subtract
+	/vs add
+/v / : divide
+	/vs subtract
+/v * : multiply
+/v % : modulo : returns the remainder of dividing x by y (x % y)
+
+/v > : greater than
+/v < : less than 
+/v <= : less than or equal to
+/v >= : greater than or equal to
+/v === : equal to
+/v !== : not equal to
+
+===decisions===
+/v if statement :
+	if (condition) {
+		do this;
+	}
+
+	
+	/eg 
+	if( "myName".length >= 7 ) {
+    	console.log("You have a long name!");
+	}
+
+/v else statement: 
+	elsse
+	{
+
+	}
+
+	use with if statement
+
+	/eg 
+	if( "myName".length >= 7 ) {
+    	console.log("You have a long name!");
+	}
+	else{
+		consoole.log("You have a short name!");
+	}
+
+==variables==
+/v variable: something you can change
+	how to declare: var myVariable
+	how to define: myVariable = value
+		/! dont mix up
+		/eg: myAge = 30
+		can be used with any data type
+		can declare and define at the same time
+			/eg: var myVariable = 30
+	/v global variable: exists everywhere
+	/v local variable: exists only within a function
+		/vs global variable
+		to create a local variable, define a variable within a function
+		/eg //this example shows difference between global and local variables
+
+		var my_number = 7; 
+		var timesTwo = function(number) {
+		    my_number = number * 2; //my_number is the global variable. BUT, if we had said "var my_number...", then we would have created a new local variable that is different from the global one of the same name.
+		    console.log("Inside the function my_number is: ");
+		    console.log(my_number);
+		}; 
+
+
+==functions==
+/v function: completes a repeated task but can change input for different output
+	how to define:
+		var myFunction = function (input) {
+			does something with the input
+		};
+		/! remember the semicolon
+	how to call:
+		myFunction(myInput)
+
+/v return: gives the programmer back the value from a function
+	/eg: var myAgeNextYear = myAge("Damon") + 1 //myAge function returns value for me to use to define myAgeNextYear
+
+==functions & variables==
+/! changing a global variable inside a function does not change its value outside a function
+
+==objects==
+/v object
+	/eg: syntax
+	var myObject = {
+	    key: value,
+	    key: value,
+	    key: value
+	};
+
+
+==comparisons between c++ and javascript==
+do not use "int i" like in c++, just use "i"
+arrays can be mixed
+	/eg var mixed = [34, "candy", true]
+array indeces surrounded by [], not ()
+
+
+
+
+//we should allow for random comments
+
+// need to do  use ";"?
+//end multiple line vocab with ; and start new line after : to show why
