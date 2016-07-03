@@ -1,0 +1,7 @@
+Alphabet:
+A-Z,a-z,0-9,all characters on keyboard, special tokens
+
+List of special tokens:
+/t,/v,=,==,/!,;,/eg,//
+
+List of nonterminals:

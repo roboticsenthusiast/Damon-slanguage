@@ -1,0 +1,12 @@
+Description:
+A source to source compiler to convert between Damon's language to LaTeX source.
+Damon's language aims to serve as a quick notetaking language for use by students
+in lecture.
+
+Design goals for Language:
+1. Very similar to standard shorthand notetaking
+2. Common sense syntax
+
+Design goals for Compiler:
+1. Code optimization is not required.
+2. Will need to convert Damon source to AST, then to LaTeX.
