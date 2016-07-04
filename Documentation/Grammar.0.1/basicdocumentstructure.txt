@@ -1,11 +1,5 @@
 \<tag> Text Input;
 
-=Header=
-/<tag> Text Input;
-/<tag> Text Input;
-==Subheader==
-/<tag> Text Input;
-/<tag> Text Input;
-===Subsubheader==
-/<tag> Text Input;
-/<tag> Text Input;
+=Header=/<tag> Text Input;/<tag> Text Input;==Subheader==/<tag> Text Input;/<tag> Text Input;===Subsubheader==/<tag> Text Input;/<tag> Text Input;
+
+<headercontent><line><subheadercontent><line><subsubheadercontent><line><subheadercontent><line><headercontent><text><subheadercontent><text><subsubheadercontent><text>
