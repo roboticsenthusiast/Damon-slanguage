@@ -2,6 +2,7 @@ Alphabet:
 A-Z,a-z,0-9,all characters on keyboard, special tokens
 
 List of special tokens:
-/t,/v,=,==,/!,;,/eg,//
+/t,/def,=,==,/!,;,/eg,//
 
 List of nonterminals:
+<headercontent>,<subheadercontent>,<subsubheadercontent>,<line>,<tag>,<text>
