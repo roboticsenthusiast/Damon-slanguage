@@ -6,5 +6,7 @@ List of special tokens:
 
 List of nonterminals:
 <headercontent>,<subheadercontent>,<subsubheadercontent>,<line>,<tag>,<text>
-Productions:
-<headercontent>::=
+Productions (Lowest Level to Highest):
+<tag>::=/t | /def | /v | /eg | /! | // | = | == | === | ;
+<text>::= "STRING"
+<line>::=<tag><text><tag> | <text><tag> | 
