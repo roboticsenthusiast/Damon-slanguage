@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Alphabet:
 A-Z,a-z,0-9,all characters on keyboard, special tokens
 
@@ -22,3 +23,20 @@ Known issues w/ unconfirmed solutions:
 2. Converting multiple subsubheaders.  
 Known issues w/o solutions:
 1. Converting multiple headers into a tree. (see message in parentheses in the relevant production)
+=======
+Alphabet:
+A-Z,a-z,0-9,all characters on keyboard, special tokens
+
+List of special tokens:
+/t,/def,=,==,/!,;,/eg,//,/v
+
+List of nonterminals:
+<headercontent>,<subheadercontent>,<subsubheadercontent>,<line>,<tag>,<text>
+Productions (Lowest Level to Highest):
+<tag>::=/t | /def | /v | /eg | /! | // | = | == | === | ;
+<text>::= "STRING"
+<line>::=<tag><text><tag> | <text><tag>
+<subsubheadercontent>::="==="<text>"===" | <subsubheadercontent><line>
+//Check <subheadercontent> production for <subheadercontent><line><line>...<subheadercontent> case
+<subheadercontent>::="=="<text>"==" | <subheadercontent><line> | <subheadercontent><subsubheadercontent>  
+>>>>>>> origin/master
