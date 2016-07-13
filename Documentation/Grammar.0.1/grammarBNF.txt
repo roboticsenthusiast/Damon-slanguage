@@ -6,21 +6,19 @@ List of special tokens:
 /t,/def,=,==,/!,;,/eg,//,/v
 
 List of nonterminals:
-<headercontent>,<subheadercontent>,<subsubheadercontent>,<line>,<tag>,<text>
+<notes>,<headercontent>,<subheadercontent>,<subsubheadercontent>,<line>,<tag>,<text>
 Productions (Lowest Level to Highest): 
 <tag>::=/t | /def | /v | /eg | /! | // | = | == | === | ;
 <text>::= "STRING"
 <line>::=<tag><text><tag> | <text><tag> | "="<text>"=" | "=="<text>"==" //special case of line | "==="<text>"==="
 <subsubheadercontent>::=<line> | <subsubheadercontent><line>
 <subheadercontent>::=<line><subheadercontent> | <subheadercontent><subsubheadercontent> (is this necessary?)| <subsubheadercontent>   
-//Look out for the multiple headers case (unresolved).
-//Possible solution: Add a nonterminal with a rank higher than that of <headercontent>
-<headercontent>::=<line><headercontent> | <headercontent><subheadercontent> (is this necessary?)| <subheadercontent>
-
+<headercontent>::=<line><headercontent> | <subheadercontent>
+<notes>::=<notes><header> | <header>
 
 Known issues w/ unconfirmed solutions:
 1. Converting multiple subheaders. (see message in parentheses in the relevant production)
 2. Converting multiple subsubheaders.  
-Known issues w/o solutions:
-1. Converting multiple headers into a tree. (see message in parentheses in the relevant production)
+
+
 
