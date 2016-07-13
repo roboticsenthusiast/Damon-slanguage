@@ -11,14 +11,11 @@ Productions (Lowest Level to Highest):
 <tag>::=/t | /def | /v | /eg | /! | // | = | == | === | ;
 <text>::= "STRING"
 <line>::=<tag><text><tag> | <text><tag> | "="<text>"=" | "=="<text>"==" //special case of line | "==="<text>"==="
-<subsubheadercontent>::=<line> | <subsubheadercontent><line>
-<subheadercontent>::=<line><subheadercontent> | <subheadercontent><subsubheadercontent> (is this necessary?)| <subsubheadercontent>   
+<subsubheadercontent>::=<line> | <line><subsubheadercontent>
+<subheadercontent>::=<line><subheadercontent> | <subsubheadercontent>   
 <headercontent>::=<line><headercontent> | <subheadercontent>
 <notes>::=<notes><header> | <header>
 
-Known issues w/ unconfirmed solutions:
-1. Converting multiple subheaders. (see message in parentheses in the relevant production)
-2. Converting multiple subsubheaders.  
 
 
 
