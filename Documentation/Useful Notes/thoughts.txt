@@ -1,1 +1,2 @@
 /img to leave space for user to draw/paste an image
+/? for a question you will answer later that you have (ex: /? does mitochondrial dna come from mother or father or both)
