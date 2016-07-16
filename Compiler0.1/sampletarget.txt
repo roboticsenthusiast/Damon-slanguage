@@ -1,0 +1,40 @@
+/t javascript notes;
+
+=random syntax=
+
+/v "text".length : returns numeric length of "text";
+/v "text".substring(x, y) : returns a substring of "text"
+starts at character x and goes up to but does not include character y;
+if omit y, starts at character x and goes to the end;
+	/! start counting the first character at "0";
+
+/v confirm("text") : creates dialogue box that pops up saying "text";
+	prompts user for to click "Ok";
+
+
+==data types==
+	/v numbers;
+	/v strings;
+	/v booleans;
+
+==mathematical operators==
+
+/v + : add OR concatenate (if string);
+/v - : subtract;
+	/vs add;
+/v / : divide;
+	/vs subtract;
+/v * : multiply;
+
+===decisions===
+/v if statement :
+	if (condition) {
+		do this
+	};
+
+	
+	/eg 
+	if( "myName".length >= 7 ) {
+    	console.log("You have a long name!")
+	};
+
