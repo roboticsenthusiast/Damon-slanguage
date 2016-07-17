@@ -3,12 +3,12 @@ Alphabet:
 A-Z,a-z,0-9,all characters on keyboard, special tokens
 
 List of special tokens:
-/t,/def,=,==,/!,;,/eg,//,/v
+/t,/def,=,==,/!,;,/eg,//,/v,/-
 
 List of nonterminals:
 <notes>,<headercontent>,<subheadercontent>,<subsubheadercontent>,<line>,<tag>,<text>
 Productions (Lowest Level to Highest): 
-<tag>::=/t | /def | /v | /eg | /! | // | = | == | === | ;
+<tag>::=/t | /def | /v | /eg | /! | // | = | == | === | ; | /-
 <text>::= "STRING"
 <line>::=<tag><text>";" | <text>";" | ";" | "="<text>"=" | "=="<text>"==" //special case of line | "==="<text>"==="
 <subsubheadercontent>::=<line> | <line><subsubheadercontent>

@@ -1,4 +1,4 @@
-/t javascript notes;
+/- javascript notes;
 
 =random syntax=
 

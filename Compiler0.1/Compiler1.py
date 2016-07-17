@@ -13,12 +13,12 @@ OutputLines=[]
 target= open(str(args.InputFileName),"r")
 Alllines=target.readlines()
 for line in Alllines:
-	if not string.split(str(line)):
+	if not str.split(str(line)):
 		OutputLines.append(";")
 	else:
 		OutputLines.append(line.rstrip('\n'))
-TargetString="".join(OutputLines)		
-
+TargetStringIntermediate="".join(OutputLines)		
+TargetString=TargetStringIntermediate.replace("	","/t")
 print TargetString
 		
 #target.close()
