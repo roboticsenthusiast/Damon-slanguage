@@ -37,4 +37,3 @@ if omit y, starts at character x and goes to the end;
 	if( "myName".length >= 7 ) {
     	console.log("You have a long name!")
 	};
-

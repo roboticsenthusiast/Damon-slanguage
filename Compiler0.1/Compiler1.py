@@ -1,10 +1,24 @@
 import argparse
 import string 
+#Compiler input
 parser=argparse.ArgumentParser(description="Compile a target file into LaTeX.")
-
-parser.add_argument("Input FileName", metavar="File", default="E1", help="The path to the input file for this compiler")
+parser.add_argument("InputFileName", metavar="File", default="E1", help="The path to the input file for this compiler")
 parser.add_argument("-o", metavar="OutputFile", nargs='?', const="E2", default="None", help="Use this option to specify an output file to write to.")
-print parser.parse_args()
+args=parser.parse_args()
+print "Target file to be compiled: "+str(args.InputFileName)
+print "Output file: "+str(args.o)
 
-#target= open(str(sys.argv[1]),"r")
+#InputFile processing
+OutputLines=[]
+target= open(str(args.InputFileName),"r")
+Alllines=target.readlines()
+for line in Alllines:
+	if not string.split(str(line)):
+		OutputLines.append(";")
+	else:
+		OutputLines.append(line.rstrip('\n'))
+TargetString="".join(OutputLines)		
+
+print TargetString
+		
 #target.close()

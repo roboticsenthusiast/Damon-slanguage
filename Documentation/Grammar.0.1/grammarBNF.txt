@@ -10,7 +10,7 @@ List of nonterminals:
 Productions (Lowest Level to Highest): 
 <tag>::=/t | /def | /v | /eg | /! | // | = | == | === | ;
 <text>::= "STRING"
-<line>::=<tag><text>";" | <text>";" | "="<text>"=" | "=="<text>"==" //special case of line | "==="<text>"==="
+<line>::=<tag><text>";" | <text>";" | ";" | "="<text>"=" | "=="<text>"==" //special case of line | "==="<text>"==="
 <subsubheadercontent>::=<line> | <line><subsubheadercontent>
 <subheadercontent>::=<line><subheadercontent> | <subsubheadercontent>   
 <headercontent>::=<line><headercontent> | <subheadercontent>

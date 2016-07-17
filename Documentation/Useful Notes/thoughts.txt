@@ -5,3 +5,6 @@
 subsets of vocab words? (ex: two types of /v cleavage; determinate and indeterminate
 
 Implement escape character?
+Deal with empty space lines by just adding in a semicolon?
+Have semicolon act as newline?
+Represent tabs with another special tag?
