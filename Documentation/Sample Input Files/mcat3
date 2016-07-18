@@ -1,0 +1,185 @@
+/t MCAT Kaplan Ch 3: Embryogenesis and Development;
+
+
+secondary oocyte -(fertilization)-> zygote -(cleavage)-> embryo -(more divisions)-> morula -(blastulation)-> blastula -(implantation and more divisions)-> gastrula -(three germ layers form)-> -(neurulation)-> -(8 weeks after fertilization)-> fetus
+
+
+=Early Dev Stages=
+secondary oocyte ovulated from follicle ~day 14
+travels to fallopian tube, where fertilized up to 24 hrs after ovulation usually at the ampula
+	/v ampula; /def widest part of fallopian tube
+
+if fertilized:
+	sperm releases acrosomal enzymes, penetrate corona radiata & zona pelucida
+	once contact oocyte cell membrane, forms acrosomal apparatus: extends to and penetrates cell membrane
+		pronucleus can now enter oocyte
+	/v cortical reaction; occurs
+		/def calcium ions released causing membrane depolarization
+		two purposes:
+			prevents multiple fertilization
+			increased metabolic rate;
+
+once fertilized, is now referred to as a /v zygote; /def fertilized egg;
+
+==Twins==
+/v dizygotic; /v fraternal; /def fertilization of two diffferent eggs; 
+	placenta may fuse but nothing else is shared, NOT genetically similar
+
+/v monozygotic; /v identical; /def zygote that split in two;
+	/! compare to: dizygotic, fraternal
+	identical genomes
+	conjoined twins may form if incomplete division
+	classified by shared structures: (mono/di)(chorionic/amnionic)
+		note to self: can it be dichorionic/monoamnionic or does amnion forms before chorion?
+
+twinning type epends on when separation occurs
+
+=Cleavage=
+zygote travels to uterus for implantation
+	if too late, no endometerium
+while moing to uterus, does /v cleavage; /def rapid mitotis of zygote/embryo
+	increases nuclear-to-cytoplasmic and surface area-to-volume ratios
+		better gas, nutrient exchange;
+two types of /v cleavage:
+	/v indeterminate cleavage; /def doesn't change cell fate;
+	/v determinate cleavage; /def changes cell fate, differentiates;
+		/! compare to: indeterminate cleavage
+
+
+/v morula; /def embryo after several divisions from zygote stage;
+	mullberry
+
+=Blastulation=
+morula --> /v blastula; /def hollow ball of cells with /v blastocoel; /def fluid-filled inner cavity;;
+/v blastucyst; /def mammal blastula;
+/v trophoblast cells; /def surround blastocoel, become chorion and placenta
+/v inner cell mass; /def become organism
+
+/v chorion; /def extraembryonic membrane
+/v chorionic villi; /def support maternal-fetal gas exchange;
+/v umbilical cord; /def 
+	two arteries (carry deoxygenated blood and waste to placenta for exchange) 
+	one vein (carries freshly oxygenated blood with nutrients from placenta to embryo);
+
+/v yolk sac; /def supports embryo until placenta ready, site of early blood cell development;
+/v allantosis; /def early fluid exchange between embryo and yolk sac;
+/v amnion; /def thing, tough membrane w/ amniotic fluid: shock absorber;
+
+==Implantation==
+blastula burrows into endometrium
+
+=Gastrulation=
+begins w/ small invagination of blastula
+	/v archenteron; /def membrane invagination into the blastocoel;
+	/v blastopore; /def opening of /v archenteron;;
+
+/v deutrosomes; /def blastopore becomes anus;
+	/ex humans;
+/v protostomes; /def blastopore becomes mouth;
+
+primary germ layers
+	/v ectoderm; /def forms integument: epidermis, hair, nails, epithelia of nose, mouth and lower anal canal. eye lens, nervous system (including adrenal medulla) and inner ear. 
+		/! attraction: cosmetic features and smarts
+	/v mesoderm; /def forms musculoskeletal, circulatory, excretory, gonads, muscular and connective tissue of digestive and respiratory systems, adrenal cortex. 
+		/! "means" of getting around
+	/v endoderm; /def epithelial linings of digestive and respiratory tracts, lungs, pancreas, thyroid, bladder, distal urinary tract, parts of liver.
+		/! linngs of "endernal" organs
+
+differentiation accomplished by selective transcription
+	/v induction; /def ability of group of cells to influence fate of nearby cells
+		mediated by /v inducers; /def diffuse from organizing to responsive cells; 
+			function /ex guidance of neural axons;
+
+=Neurulation= 
+/v neurulation; /def development of the nervous system;
+	occurs after 3 germ layers formed
+	recall: derived from ectoderm
+	notochord (mesodermal cells) forms --> neural folds/groove in the neural plate 
+	neural crest cells --> PNS, sensory ganglia, auto ganglia, adrenal medulla, Schwann cells, cell types in other tissues too
+	ectodermal cells migrate to cover growing NS
+
+=Problems=
+highly sensitive time
+/v teratogens; /def substances that interfere w/ dev; /ex alcohol, prescription drugs, pathogens, polycyclic aromatic hydrocarbons
+can cause defects, deaths
+sugar overexposure --> too large, hypoglycemia (b/c high insulin levels as compensation for previous high sugar)
+folic acid deficiency --> prevent complete closure of neural tube --> spina bifida, anencephaly
+unpredictable, variable, multifactory
+
+=Mechanisms of Dev=
+/v determination; /def commmitment of cell to particular function, lineage;
+	may be caused by: 
+		uneven mRNA, protein distribution (during cleavage)
+		secretion of morphogens by nearby molecules
+/v differentiation; /def changes in struct/funct/biochem to match new cell type; /vs determination;
+/v potency;
+	/v totipotent; /def can differentiate into any cell type- fetal or placental; /ex embryonic stem cells;
+	/v pluripotent; /def can differentiate into any cell type EXCEPT placental; /ex cells after 3 germ layers have established;
+	/v multipotent; /def can differentiate in to multiple types within a group; /ex hematopoietic stem cells;
+
+=Cell-cell communication=
+/v inducer; /def sends signal to /v responder; /def receives signal;;
+	responder must be /v competent;
+/v autocrine; /def signal acts on same cell that secreted it;
+/v paracrine; /def signal acts on local area;
+/v juxtacrine; /def signal acts on adjacent cell through receptors and NOT diffusion;
+/v endocrine; /def signal travels through bloodstream; /vs autocrine, paracrine, juxtacrine;
+
+inducers are often /growth factors; /def peptides that promote differentiation and mitosis in certain tissues;
+	GFs often only work on certain cells
+	induction is not always one-way: /v reciprocal development;
+
+/v morphogens; /def cause cell determination; /ex TGF beta, Shh, EGF;
+	often use gradients to cause determination;
+
+==other tools=
+/v cell migration;
+	/ex
+		anterior pituitary gland: top of mouth --> below hypothalamus
+		neural crest cells: neural folds --> many places, including skin melanocytes, sensatory ganglia;
+
+/v cell death; /def cell divides into apoptotic blebs which can be digested, recycled;
+	/ex
+		webbing of and;
+	/vs /v necrosis; /def result of injury, internal substances can leak causing immune response;;
+
+humans have incomplete regeneration capacity vs complete regeneration
+	liver has high reg capacity
+	heart has little
+	kidney has moderate
+
+/v senescence; /def biological aging;
+	causes: telomere shortening
+		telomerase may combat this: can synthesize more telomere
+
+=fetal diffusion=
+/! fetal hemoglobin (HbF) has a greater affinity for oxygen than maternal hemoglobin (mostly HbA);
+placental barrier helps w/ immune protection: antibodies can cross placental membrane; 
+/!
+	/v umbilical arteries; /def carry blood away from fetus, towards placenta;
+	/v umbilical vein; /def carries blood towards fetus, from placenta;
+	oxygenation occurs in placenta, NOT the fetal lungs;
+lungs and liver do not function siginificantly
+	detox, metabolism controlled mostly by mom's liver
+	nutrient/waste xchange occur at placenta
+	both sensitive to high blood pressure: three shunts actively direct blood away
+		/v foramen ovale; /def one-way valve, connects right atrium to left atrium;
+			allows right atrium --> left atrium, instead of --> right ventricle
+			unlike in adult, right side is at higher pressure than left side
+			birth: pressure diff reverses, foramen ovale suts
+		/v ductus arteriosus; /def shunts leftover blood from pulmonary artery to aorta;
+		/v ductus venosus; /defe shunts blood from placenta to inferior vena cava (instead of liver);
+			liver still receives blood from smaller haltic arteries
+
+=gestation, birth=
+pregnancy: ~266 days
+larger animal ~= larger gestational period
+
+/v first trimester; /def major organ development, heart beats, becomes fetus, 9cm long;
+/v second trimester; /def fetus grows a lot, toes/fingers/human appearance, 30-36cm long;
+/v third trimester; /def growth, highly selective active transport of antibodies, growth rate slows at tend, fetus less active;
+
+birth: /! prostoglandins and oxytocin coordinate rhythmic contractions;
+	1 cervix thins out and amniotic sac ruptures: water breaking
+	2 strong uterine contractions --> birth
+	3 placenta and umbilical cord expelled: afterbirth
