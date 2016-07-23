@@ -7,10 +7,11 @@ List of special tokens:
 
 List of nonterminals:
 <notes>,<headercontent>,<subheadercontent>,<subsubheadercontent>,<line>,<tag>,<text>
-Productions (Lowest Level to Highest): 
-<tag>::=/t | /def | /v | /eg | /! | // | = | == | === | ; | /-
-<text>::= "STRING"
-<line>::=<tag><text>";" | <text>";" | ";" | "="<text>"=" | "=="<text>"==" //special case of line | "==="<text>"==="
+Productions (Lowest Level to Highest):
+<allowedchar>::=ascii_letters | " " | special_chars | "/t" | "\n" 
+<tag>::=/def | /v | /eg | /! | // | = | == | === | ; | /-
+<text>::= <allowedchar> | <allowedchar><text>
+<line>::=<text><tag><text>";" | <tag><text>";" | <text>";" | ";" | "="<text>"=" | "=="<text>"==" //special case of line | "==="<text>"==="
 <subsubheadercontent>::=<line> | <line><subsubheadercontent>
 <subheadercontent>::=<line><subheadercontent> | <subsubheadercontent>   
 <headercontent>::=<line><headercontent> | <subheadercontent>

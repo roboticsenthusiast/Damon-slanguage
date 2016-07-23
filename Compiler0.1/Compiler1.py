@@ -1,3 +1,4 @@
+#!/usr/bin/python2
 import argparse
 import string 
 #Compiler input
@@ -19,6 +20,8 @@ for line in Alllines:
 		OutputLines.append(line.rstrip('\n'))
 TargetStringIntermediate="".join(OutputLines)		
 TargetString=TargetStringIntermediate.replace("	","/t")
-print TargetString
-		
+
+#Attempt to convert TargetString into an abstract syntax tree
+
+
 #target.close()

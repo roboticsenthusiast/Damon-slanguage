@@ -7,3 +7,17 @@ subsets of vocab words? (ex: two types of /v cleavage; determinate and indetermi
 Implement escape character?
 Deal with empty space lines by just adding in a semicolon?
 Have semicolon act as newline?
+Treat tags as unicode
+
+Look into markup parsers vs language parsers (Might not be a good idea to write a recursive descent parser)
+Issues:
+Having the semicolon double as a newline raises problems for actual newline characters (this is particularly critical for the compiler section that converts empty lines into ';'s)
+
+Useful links:
+http://stackoverflow.com/questions/7377344/how-to-write-a-parser-in-c
+http://stackoverflow.com/questions/531707/whats-the-best-way-to-write-a-parser-by-hand
+http://marvin.cs.uidaho.edu/Handouts/grammar.pdf
+http://stackoverflow.com/questions/10268518/python-string-to-unicode
+http://www.balisage.net/Proceedings/vol1/html/Smith01/BalisageVol1-Smith01.html
+http://www.cs.engr.uky.edu/~lewis/essays/compilers/rec-des.html
+

@@ -11,12 +11,6 @@ if omit y, starts at character x and goes to the end;
 /v confirm("text") : creates dialogue box that pops up saying "text";
 	prompts user for to click "Ok";
 
-
-==data types==
-	/v numbers;
-	/v strings;
-	/v booleans;
-
 ==mathematical operators==
 
 /v + : add OR concatenate (if string);
@@ -33,7 +27,7 @@ if omit y, starts at character x and goes to the end;
 	};
 
 	
-	/eg 
+	/eg
 	if( "myName".length >= 7 ) {
     	console.log("You have a long name!")
 	};
