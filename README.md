@@ -1,7 +1,7 @@
 # Damon-slanguage
 
 A source to source compiler to convert from Damon's language to LaTeX.
-Damon's language aims to serve as a easy to use markup language students
+Damon's language aims to serve as a easy to use markup language for students
 in lecture. User-input will allow for generation of content like an outlined summary, importable vocabulary cards, an index and a glossary.
 In the future we may move towards interactive HTML documents.
 
