@@ -23,26 +23,44 @@ for line in Alllines:
 		OutputLines.append(";")
 	else:
 		OutputLines.append(line.rstrip('\n'))
-TargetStringIntermediate="".join(OutputLines)		
-TargetString=TargetStringIntermediate.replace("	","/t")
+TargetString="".join(OutputLines)		
+print "String to be parsed: {string}".format(string=TargetString)
 
 #Lexer section
 
 #Define tokens with regex
 #Review regex later for enhancements
 
-Tokens={'TAG':'(/def|/v|/eg|/!|//|=|==|===|;|/-)','TEXT':'(\w*\s*)+'}
+#Contents of Tokens: 'TAG':'(/def|/v|/eg|/!|//|=|==|===|;|/-)','TEXT':'(\w*\s*)+'
+#Numbers is a test regex
+#Current regex may not work
+Tokens={'Numbers':'-?[0-9]+'}
+    
+#Recursive regex searcher    
+def reSearcher(compiledRegex,targetString,startindex,foundList):
+    matchString=compiledRegex.search(targetString,startindex)
+    if (matchString is None):
+        print "No remaining matches"
+        print "Results found: {stuff}".format(stuff=foundList)
+        return foundList
+    else:
+        print "1 found!"
+        foundList.append(matchString.groupdict().items()[0])
+        reSearcher(compiledRegex,targetString,matchString.end(),foundList)
+    
 
-def lex(inputstr):
+#Main lexer function
+def lex(inputString):    
     tokens=[]
     tokenRegex=[]
     for key in Tokens:
         tokenRegex.append("|(?P<{groupName}>{actualRegex})".format(groupName=key,actualRegex=Tokens[key]))
     tokenRegexstr=("".join(tokenRegex))[1:]
     looker=re.compile(tokenRegexstr)
-    while (re.search(
-    print tokenRegexstr
+    reSearcher(looker,inputString,0,tokens)
     return tokens
 
-new=lex()
-#target.close()
+
+new=lex("34-2")
+
+target.close()
