@@ -1,0 +1,59 @@
+/- Damon's Language;
+
+/=Description;
+Damon's language aims to serve as a quick notetaking language for use by students in lecture. Users can denote the logical significance of certain words with explicit tokens, which the compiler uses to create a LaTeX document with markupunderline, highlight, etc.)   (
+
+Language design goals: similarity to shorthand notetaking & common sense syntax.
+
+/=Syntax;
+
+In general, tokens begin with slash character "'/". The apostrophe character "'" is used as an escape character, as shown in the preceding sentence. The region of text that will be marked up is between the slash character and the next semicolon, ";". 
+
+	To create a block of text the compiler will not markup, use the following:
+
+		/' Example: /t /v /d '/
+
+Listed are the supported tokens:
+	/-title;
+		title of the document.
+
+	/=heading;
+	/==subheading;
+	/===subsubheading;
+		only 3 levels of headings are supported. 
+
+	/*bullet point;
+
+	/v vocab word; /def definition.; 
+		"vocab word" is bolded and followed by a colon,
+		"definition" is in plaintext and is always associated with the most recent vocab word,
+
+		definition does not have to immediately follow vocab word: see example below;
+			/v cat; cats are cool. /def a small domesticated carnivorous mammal with soft fur, a short snout, and retractile claws;,
+
+		for vocab words with identical definitions, the following syntax can be used;
+			/v dog, puppy, doge, man's best friend; /def a domesticated carnivorous mammal that typically has a long snout, an acute sense of smell, and a barking, howling, or whining voice;,
+
+		at the end of a document, a glossary with vocab words and definitions is generated.
+
+	/! important;
+		"important" is highlighted.
+
+	/vs versus;
+		creates an equivalence relation from the previous vocab word and its arguments (separated by commas) to denote related vocab words. for example:
+			/v coke; /vs pepsi, mountain dew, root beer;
+
+		Each glossary entry for vocab words will list other words in the same '/vs equivalence class. 
+
+	/eg example;
+		relates its arguments as examples of the previous vocab word. for example:
+			/v coke; /eg diet coke, cherry coke;
+
+		Each glossary entry for vocab words will list words for which it is an example of, and/or words that are examples of it. 
+
+/==Unsupported features;
+
+	tokens within tokens, for example:
+		/' /v ice cream; /def a /v yummy; /def tasty; treat; '/
+
+	
